@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neon Images Website</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #111;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+    }
+    .neon-image {
+        display: inline-block;
+        margin: 10px;
+    }
+    .neon-image img {
+        filter: brightness(200%) saturate(200%);
+        transition: filter 0.3s ease-out;
+    }
+    .neon-image img:hover {
+        filter: brightness(400%) saturate(400%);
+    }
+    h1 {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Neon Images Gallery</h1>
+        <div class="neon-image">
+            <img src="image1.jpg" alt="Neon Image 1">
+        </div>
+        <div class="neon-image">
+            <img src="image2.jpg" alt="Neon Image 2">
+        </div>
+        <div class="neon-image">
+            <img src="image3.jpg" alt="Neon Image 3">
+        </div>
+        <!-- Add more .neon-image divs for additional images -->
+    </div>
+</body>
+</html>
